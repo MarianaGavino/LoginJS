@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(to right, rgb(148, 204, 230), rgb(243, 164, 243));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+        background-color: rgb(255, 255, 255);
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+    height: 40px;
+    width: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

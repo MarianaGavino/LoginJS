@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Sign in</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="email">
+            <label>Email:</label>    
+        </div>
+        <input type="email" placeholder="example@example.com" class="formEmail"></input>
+        <div class="validacionEmail" ></div>
+
+        <div class="password">
+            <label>Contraseña:</label>   
+        </div>
+        <input type="password" placeholder="password"  class="formPassword"></input>
+        <div class="validacionPassword"></div>
+             
+    </div>
+
+    <button type="submit" class="btnlogin" onclick="login()">Iniciar sesion</button>
+    
+    <!-- <label class="leyenda">¿Aùn no tienes cuenta?</label>
+        
+    <button class="registrarse" id="btnregister" >Registarse</button> -->
+
+    <h3 class="response"></h3>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
