@@ -3,7 +3,9 @@ const userPass = document.querySelector(".formPassword");
 const btn = document.querySelector(".btnlogin");
 const h3 = document.querySelector(".response");
 const valEmail = document.querySelector(".validacionEmail");
+const valEmail1 = document.querySelector(".validacionEmail1");
 const valPass = document.querySelector(".validacionPassword");
+
 
 const login = async() => {
 
@@ -19,35 +21,29 @@ const login = async() => {
         headers,
     });
 
+    
     console.log(response);
 
+    const data = await response.json()       
+
+    let inputEmail = !userEmail.value ? valEmail.classList.remove("validacionEmail") : valEmail.classList.add("validacionEmail");
+    let inputEmail1 = data.error ? valEmail1.classList.remove("validacionEmail1") : valEmail1.classList.add("validacionEmail1");
+
+    let inputPass = !userPass.value ? valPass.classList.remove("validacionPassword") : valPass.classList.add("validacionPassword");
+
     if (response.status !== 200) {
-         h3.innerHTML = "Error";
+        h3.innerHTML = "Error";
     }
-    if (!userEmail.value) {
-       valEmail.innerHTML= "El campo no puede estar vacío";
-    }
-    if (!userPass.value) {
-        valPass.innerHTML= "El campo no puede estar vacío";
-    }
-    
-    if (userEmail.value != email) {
-        valEmail.innerHTML="El email es incorrecto";
-    }
-    else {
-        const data = await response.json()
+
+    else  {   
         console.log(data)
+        console.log(data.error)
         h3.innerHTML =  data.token;
-        //location.href="home.html"
+        location.href="home.html"
     } 
 
-    //console.log(Object.values(data.Object));
-    console.log(email);
-    console.log(userEmail.value);
-    console.log(userPass.value);
-    
 };
-// Cuentas:
+
 // eve.holt@reqres.in
 // cityslicka
 

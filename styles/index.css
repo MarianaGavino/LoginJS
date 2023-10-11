@@ -32,6 +32,16 @@ button {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
 }
+.novisible {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.validacionEmail, .validacionEmail1, .validacionPassword {
+    display: none;
+}
+
 .leyenda {
     font-size: 15px;
     display: flex;
