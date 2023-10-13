@@ -11,3 +11,10 @@ table, td {
 td {
     margin: 10px;
 }
+
+/* .tbody .fila:nth-child(odd) {
+    color: green;
+  }
+  .tbody .fila:nth-child(even) {
+    color: yellow;
+  } */
