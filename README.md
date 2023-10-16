@@ -15,4 +15,4 @@ Para poder iniciar sesión usa la siguiente cuenta:
 - Email: eve.holt@reqres.in
 - Contraseña: cityslicka
   
-Una vez que inicies sesión serás redireccionado a una segunda página llamada home.
+Una vez que inicies sesión serás redireccionado a una segunda página llamada "home" en donde se mostrará una tabla.
