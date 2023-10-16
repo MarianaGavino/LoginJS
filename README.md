@@ -1,5 +1,5 @@
 # LoginJS
-Este es un proyecto de login en el que se usó HTML, CSS, JavaScript y la api [Reqres](https://reqres.in/)
+La primera parte del proyecto es un login en el que se usó HTML, CSS, JavaScript y la api [Reqres](https://reqres.in/), la segunda parte es una tabla en donde las filas impar son verde y las par amarillo.
 
 # Instalación
 - Puede descargar el proyecto como .zip ó
